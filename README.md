@@ -8,4 +8,6 @@ TopDownCamera
 
 Press T to Toggle between top down and normal viewing angle.
 
+WARNING: this makes placement kinda weird on non-zero height areas so maybe build in normal mode and then swap to top down or something idk lol.
+
 [![Requires BTD6 Mod Helper](https://raw.githubusercontent.com/gurrenm3/BTD-Mod-Helper/master/banner.png)](https://github.com/gurrenm3/BTD-Mod-Helper#readme)
