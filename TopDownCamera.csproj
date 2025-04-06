@@ -12,6 +12,9 @@
     <ItemGroup>
         <Content Include=".github\workflows\build.yml" />
     </ItemGroup>
+    <ItemGroup>
+      <Folder Include="assets\" />
+    </ItemGroup>
 
     <Import Project="..\btd6.targets" />
 </Project>
