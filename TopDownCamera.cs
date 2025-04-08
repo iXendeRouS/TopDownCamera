@@ -3,6 +3,7 @@ using BTD_Mod_Helper;
 using TopDownCamera;
 using Il2CppAssets.Scripts.Unity.UI_New.InGame;
 using UnityEngine;
+using Il2CppAssets.Scripts.Unity.UI_New.Popups;
 
 [assembly: MelonInfo(typeof(TopDownCamera.TopDownCamera), ModHelperData.Name, ModHelperData.Version, ModHelperData.RepoOwner)]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
@@ -23,6 +24,8 @@ public class TopDownCamera : BloonsTD6Mod
         base.OnUpdate();
 
         if (InGame.instance?.bridge == null) return;
+
+        if (PopupScreen.instance.IsPopupActive()) return;
 
         if (Settings.toggleView.JustPressed())
         {            
